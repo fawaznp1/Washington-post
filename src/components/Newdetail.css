@@ -1,0 +1,13 @@
+.news-detail {
+    padding: 20px;
+  }
+  
+  .news-detail h2 {
+    font-family: 'Lobster', cursive;
+    color: #333;
+  }
+  
+  .news-detail p {
+    text-align: justify;
+  }
+  

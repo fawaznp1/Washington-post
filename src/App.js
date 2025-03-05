@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import { Routes,Route } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header';
+import Home from './components/Home';
+import Business from './components/Business';
+import Fashion from './components/Fashion';
+import Latest from './components/Latest';
+import Sports from './components/Sports';
+import Tech from './components/Tech';
+import Webname from './components/Webname';
+import NewsDetail from './components/Newsdetail';
+import Footer from './components/Footer';
+import Crime from './components/Crime'
+import Businessdetail from './components/Businessdetail';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Webname />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/business' element={<Business />} />
+        <Route path='/fashion' element={<Fashion />} />
+        <Route path='/crime' element={<Crime />} />
+        <Route path='/sports' element={<Sports />} />
+        <Route path='/tech' element={<Tech />} />
+        <Route path="/news/:newsId" element={<NewsDetail />} />
+        <Route path="/business/:id" component={Businessdetail} />
+
+
+      </Routes>
+      <Footer />
     </div>
   );
 }
