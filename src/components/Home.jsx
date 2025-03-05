@@ -33,7 +33,7 @@ function HomeSection() {
                 className="clickable-headline"
                 style={{ cursor: 'pointer', textAlign: 'center', fontSize: '1.5rem' }}
               >
-             Josef jeorge Christy lives in Kochi kakkanad. its a pleasure ...
+             Josef Francis Christy lives in Kochi kakkanad. its a pleasure ...
               </h3>
             </Col>
           </Row>
